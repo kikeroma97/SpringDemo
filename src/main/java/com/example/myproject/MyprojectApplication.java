@@ -11,7 +11,10 @@ public class MyprojectApplication {
 
 	@RequestMapping("/")
 	String home() {
-		return "Hello World!";
+
+		Calculador cal1 = new Calculador(3,5);
+
+		return "Hello World!"+ "the sum is "+cal1.sum();
 	}
 
 	public static void main(String[] args) {
